@@ -1,0 +1,29 @@
+﻿<Window x:Class="TestWpfFontEmbedsDotNet7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestWpfFontEmbedsDotNet7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="TestBlock" FontSize="48">Test block</TextBlock>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontFamily="{StaticResource Alice}" FontSize="32">Alice</TextBlock>
+            <TextBlock FontFamily="{StaticResource Bagnard}" FontSize="32">Bagnard</TextBlock>
+            <TextBlock FontFamily="{StaticResource CooperHewitt}" FontWeight="Light" FontSize="32">Cooper Hewitt Light</TextBlock>
+            <TextBlock FontFamily="{StaticResource CooperHewitt}" FontWeight="Heavy" FontSize="32">Cooper Hewitt Heavy</TextBlock>
+            <TextBlock FontFamily="{StaticResource Inter}" FontWeight="Light" FontSize="32">Inter Light</TextBlock>
+            <TextBlock FontFamily="{StaticResource Inter}" FontWeight="SemiBold" FontSize="32">Inter SemiBold</TextBlock>
+            <TextBlock FontFamily="{StaticResource Inter}" FontWeight="Black" FontSize="32">Inter Black</TextBlock>
+            <TextBlock FontFamily="{StaticResource Oswald}" FontWeight="Bold" FontSize="32">Oswald Bold</TextBlock>
+            <TextBlock FontFamily="{StaticResource Pacifico}" FontSize="32">Pacifico</TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

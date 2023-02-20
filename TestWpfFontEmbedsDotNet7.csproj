@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Alice-Regular.ttf" />
+    <None Remove="Fonts\Bagnard.otf" />
+    <None Remove="Fonts\CooperHewitt-Heavy.otf" />
+    <None Remove="Fonts\CooperHewitt-Light.otf" />
+    <None Remove="Fonts\Inter-Black.ttf" />
+    <None Remove="Fonts\Inter-Light.ttf" />
+    <None Remove="Fonts\Inter-SemiBold.ttf" />
+    <None Remove="Fonts\Oswald-Bold.otf" />
+    <None Remove="Fonts\Pacifico-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Alice-Regular.ttf" />
+    <Resource Include="Fonts\Bagnard.otf" />
+    <Resource Include="Fonts\CooperHewitt-Heavy.otf" />
+    <Resource Include="Fonts\CooperHewitt-Light.otf" />
+    <Resource Include="Fonts\Inter-Black.ttf" />
+    <Resource Include="Fonts\Inter-Light.ttf" />
+    <Resource Include="Fonts\Inter-SemiBold.ttf" />
+    <Resource Include="Fonts\Oswald-Bold.otf" />
+    <Resource Include="Fonts\Pacifico-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Fonts\OFL.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
